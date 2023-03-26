@@ -1,5 +1,4 @@
-import { useMemo } from 'react'
-import { useEffect } from 'react'
+import React, { useMemo, useEffect, useRef } from 'react'
 
 import Swal from 'sweetalert2'
 import { Button, Grid, IconButton, TextField, Typography } from '@mui/material'
@@ -10,7 +9,6 @@ import { ImageGallery } from '../../components/ImageGallery'
 import { useForm } from '../../hooks/useForm'
 import { setActiveNote } from '../../store/slices/JournalNotes'
 import { startSaveNote, startUploadingFiles } from '../../store/slices/JournalNotes/thunks'
-import { useRef } from 'react'
 
 export const NoteView = () => {
 
@@ -49,7 +47,7 @@ export const NoteView = () => {
         container 
         direction='row' 
         justifyContent='space-between'
-        sx={{ mb: 1 }}
+        sx={{ mb: 1, border: "1px solid orange" }}
     >
         <Grid item>
             <Typography fontSize={39} fontWeight='light'>

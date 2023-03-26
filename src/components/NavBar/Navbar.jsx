@@ -16,6 +16,7 @@ export const Navbar = ({drawerWidth}) => {
     <AppBar
         position='fixed'
         sx={{
+            border: "2px solid red",
             width: {sm: `calc(100% - ${drawerWidth}px)`},
             ml: { sm: `${ drawerWidth }px` }
         }}

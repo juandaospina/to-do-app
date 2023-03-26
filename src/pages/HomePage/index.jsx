@@ -6,10 +6,11 @@ import { JournalLayout } from "../../containers/Layout/JournalLayout"
 import { NoteView } from "../../containers/NoteView"
 
 import { NothingSelectedView } from "../../containers/NothingSelectedView"
+import { firebaseAuth } from "../../firebase/config"
 import { startLoadingNotes, startNewNote } from "../../store/slices/JournalNotes/thunks"
 
 export const HomePage = () => {
-
+  console.log("CURRENT_USER", firebaseAuth.currentUser);
   const { isSaving, active } = useSelector(state => state.JOURNAL);
   const dispatch = useDispatch();  
 

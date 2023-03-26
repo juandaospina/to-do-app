@@ -11,7 +11,8 @@ export const SideBar = ({ drawerWidth = 240 }) => {
   return (
     <Box
         component='nav'
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 }}}
+        style={{ border: "2px solid #00ffcb"}}
+        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 }, border: "2px solid #00ffcb"}}
     >
         <Drawer
             variant='permanent'
